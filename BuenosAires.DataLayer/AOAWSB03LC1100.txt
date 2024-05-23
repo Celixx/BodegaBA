@@ -1,0 +1,5 @@
+En caso de que aparezca uno de estos nombres en las cadenas de conexión a BD, deben saber que:
+
+AOAWSB03LC1100 es el nombre del PC del Profesor en DUOC Sala 2309
+
+z80\SQLEXPRESS es el nombre del Notebook del Profesor
