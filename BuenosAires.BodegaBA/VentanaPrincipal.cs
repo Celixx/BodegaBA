@@ -35,6 +35,13 @@ namespace BuenosAires.BodegaBA
         private void btnMantenedor_Click(object sender, EventArgs e)
         {
             new VentanaProducto().Show();
+            Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new VentanaGuiasDespacho().Show();
+            Hide();
         }
     }
 }

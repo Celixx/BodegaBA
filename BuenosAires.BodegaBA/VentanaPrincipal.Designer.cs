@@ -66,6 +66,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Administrar Guías de Despacho";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -90,9 +91,10 @@
             // 
             // btnMantenedor
             // 
-            this.btnMantenedor.Location = new System.Drawing.Point(243, 245);
+            this.btnMantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMantenedor.Location = new System.Drawing.Point(243, 254);
             this.btnMantenedor.Name = "btnMantenedor";
-            this.btnMantenedor.Size = new System.Drawing.Size(75, 23);
+            this.btnMantenedor.Size = new System.Drawing.Size(315, 38);
             this.btnMantenedor.TabIndex = 5;
             this.btnMantenedor.Text = "Mantenedor de Productos";
             this.btnMantenedor.UseVisualStyleBackColor = true;
@@ -102,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 521);
+            this.ClientSize = new System.Drawing.Size(800, 499);
             this.Controls.Add(this.btnMantenedor);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.button2);

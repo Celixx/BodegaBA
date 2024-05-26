@@ -90,6 +90,12 @@
     <Compile Include="VentanaBuscarID.Designer.cs">
       <DependentUpon>VentanaBuscarID.cs</DependentUpon>
     </Compile>
+    <Compile Include="VentanaGuiasDespacho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaGuiasDespacho.Designer.cs">
+      <DependentUpon>VentanaGuiasDespacho.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="VentanaBuscarID.resx">
       <DependentUpon>VentanaBuscarID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaGuiasDespacho.resx">
+      <DependentUpon>VentanaGuiasDespacho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaLogin.resx">
       <DependentUpon>VentanaLogin.cs</DependentUpon>
