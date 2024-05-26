@@ -10,10 +10,9 @@ namespace BuenosAires.BodegaBA
 {
     public partial class VentanaProducto : Form
     {
-        public VentanaProducto(string nomusu, string tipousu)
+        public VentanaProducto()
         {
             InitializeComponent();
-            this.Text = $"Mantenedor de Productos - Usuario: {nomusu} ({tipousu})";
             btnBuscar.Click += (sender, e) => Buscar();
             btnNuevo.Click += (sender, e) => Nuevo();
             btnGuardar.Click += (sender, e) => Guardar();
