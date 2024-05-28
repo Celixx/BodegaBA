@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -57,7 +58,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IScGuiaDespacho.cs" />
     <Compile Include="ScAutenticacion.cs" />
+    <Compile Include="ScGuiaDespacho.cs" />
     <Compile Include="ScProducto.cs" />
     <Compile Include="Connected Services\WsAutenticacionReference\Reference.cs">
       <AutoGen>True</AutoGen>

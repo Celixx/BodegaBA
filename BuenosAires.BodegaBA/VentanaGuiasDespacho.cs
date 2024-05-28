@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BuenosAires.Model.Utiles;
 
 namespace BuenosAires.BodegaBA
 {
@@ -15,6 +16,8 @@ namespace BuenosAires.BodegaBA
         public VentanaGuiasDespacho()
         {
             InitializeComponent();
+            grid.ConfigurarDataGridView("nrogd:Nro GD, nomprod:Producto, "
+                + "fechafac:Fecha GD, estadogd:Estado GD, nrofac: Nro Factura, nombre:Cliente, opciones:Opciones");
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

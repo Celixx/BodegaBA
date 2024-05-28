@@ -30,10 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnMantenedor = new System.Windows.Forms.Button();
+            this.btnAdministrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,17 +56,6 @@
             this.label2.Size = new System.Drawing.Size(623, 42);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sistema de Bodega - Menú Principal";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(243, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(315, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Administrar Guías de Despacho";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -100,15 +89,26 @@
             this.btnMantenedor.UseVisualStyleBackColor = true;
             this.btnMantenedor.Click += new System.EventHandler(this.btnMantenedor_Click);
             // 
+            // btnAdministrar
+            // 
+            this.btnAdministrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrar.Location = new System.Drawing.Point(243, 298);
+            this.btnAdministrar.Name = "btnAdministrar";
+            this.btnAdministrar.Size = new System.Drawing.Size(315, 41);
+            this.btnAdministrar.TabIndex = 6;
+            this.btnAdministrar.Text = "Administrar Guías";
+            this.btnAdministrar.UseVisualStyleBackColor = true;
+            this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 499);
+            this.Controls.Add(this.btnAdministrar);
             this.Controls.Add(this.btnMantenedor);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "VentanaPrincipal";
@@ -123,9 +123,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnMantenedor;
+        private System.Windows.Forms.Button btnAdministrar;
     }
 }

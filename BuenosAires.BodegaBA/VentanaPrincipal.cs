@@ -43,5 +43,11 @@ namespace BuenosAires.BodegaBA
             new VentanaGuiasDespacho().Show();
             Hide();
         }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            new VentanaGuiasDespacho().Show();
+            Hide();
+        }
     }
 }
