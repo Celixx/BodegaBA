@@ -17,13 +17,18 @@ namespace BuenosAires.BodegaBA
         {
             InitializeComponent();
             grid.ConfigurarDataGridView("nrogd:Nro GD, nomprod:Producto, "
-                + "fechafac:Fecha GD, estadogd:Estado GD, nrofac: Nro Factura, nombre:Cliente, opciones:Opciones");
+                + "fechafac:Fecha GD, estadogd:Estado GD, nrofac: Nro Factura, nombre:Cliente");
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
             new VentanaPrincipal();
             Hide(); 
+        }
+
+        public void CargarGuiasDespacho()
+        {
+            var bc = new ScGuiaDespacho();
         }
     }
 }

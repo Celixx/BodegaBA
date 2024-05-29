@@ -58,6 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\WsGuiaDespachoReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="IScGuiaDespacho.cs" />
     <Compile Include="ScAutenticacion.cs" />
     <Compile Include="ScGuiaDespacho.cs" />
@@ -79,6 +84,10 @@
     <None Include="Connected Services\WsAutenticacionReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.wsdl" />
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.xsd">
+      <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\WsProductoReference\WsProducto.disco" />
     <None Include="Connected Services\WsProductoReference\configuration91.svcinfo" />
@@ -197,7 +206,23 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WsAutenticacionReference\" />
+    <WCFMetadataStorage Include="Connected Services\WsGuiaDespachoReference\" />
     <WCFMetadataStorage Include="Connected Services\WsProductoReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
