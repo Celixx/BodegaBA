@@ -89,6 +89,12 @@
     <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\WsProductoReference\WsProducto.disco" />
     <None Include="Connected Services\WsProductoReference\configuration91.svcinfo" />
     <None Include="Connected Services\WsProductoReference\configuration.svcinfo" />

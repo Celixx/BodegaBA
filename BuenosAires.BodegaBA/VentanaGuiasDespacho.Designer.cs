@@ -32,6 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
             this.grid = new System.Windows.Forms.DataGridView();
+            this.nrogd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descfac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadogd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrofac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomcli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,10 +73,46 @@
             // grid
             // 
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid.Location = new System.Drawing.Point(12, 77);
+            this.grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nrogd,
+            this.descfac,
+            this.estadogd,
+            this.nrofac,
+            this.nomcli});
+            this.grid.Location = new System.Drawing.Point(16, 73);
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(776, 332);
+            this.grid.Size = new System.Drawing.Size(772, 336);
             this.grid.TabIndex = 3;
+            // 
+            // nrogd
+            // 
+            this.nrogd.DataPropertyName = "ListaGuiaDespacho.nrogd";
+            this.nrogd.HeaderText = "Nro Gd";
+            this.nrogd.Name = "nrogd";
+            // 
+            // descfac
+            // 
+            this.descfac.DataPropertyName = "descfac";
+            this.descfac.HeaderText = "Producto";
+            this.descfac.Name = "descfac";
+            // 
+            // estadogd
+            // 
+            this.estadogd.DataPropertyName = "estadogd";
+            this.estadogd.HeaderText = "Estado GD";
+            this.estadogd.Name = "estadogd";
+            // 
+            // nrofac
+            // 
+            this.nrofac.DataPropertyName = "nrofac";
+            this.nrofac.HeaderText = "Nro Fac";
+            this.nrofac.Name = "nrofac";
+            // 
+            // nomcli
+            // 
+            this.nomcli.DataPropertyName = "nomcli";
+            this.nomcli.HeaderText = "Cliente";
+            this.nomcli.Name = "nomcli";
             // 
             // VentanaGuiasDespacho
             // 
@@ -96,5 +137,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.DataGridView grid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nrogd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descfac;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadogd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nrofac;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomcli;
     }
 }

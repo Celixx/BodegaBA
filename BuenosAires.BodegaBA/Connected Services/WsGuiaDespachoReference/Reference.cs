@@ -15,11 +15,11 @@ namespace BuenosAires.BodegaBA.WsGuiaDespachoReference {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WsGuiaDespachoReference.IWsGuiaDespacho")]
     public interface IWsGuiaDespacho {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsGuiaDespacho/DoWork", ReplyAction="http://tempuri.org/IWsGuiaDespacho/DoWorkResponse")]
-        void DoWork();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despacho", ReplyAction="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despachoResponse")]
+        BuenosAires.Model.Respuesta obtener_guias_de_despacho();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsGuiaDespacho/DoWork", ReplyAction="http://tempuri.org/IWsGuiaDespacho/DoWorkResponse")]
-        System.Threading.Tasks.Task DoWorkAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despacho", ReplyAction="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despachoResponse")]
+        System.Threading.Tasks.Task<BuenosAires.Model.Respuesta> obtener_guias_de_despachoAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -49,12 +49,12 @@ namespace BuenosAires.BodegaBA.WsGuiaDespachoReference {
                 base(binding, remoteAddress) {
         }
         
-        public void DoWork() {
-            base.Channel.DoWork();
+        public BuenosAires.Model.Respuesta obtener_guias_de_despacho() {
+            return base.Channel.obtener_guias_de_despacho();
         }
         
-        public System.Threading.Tasks.Task DoWorkAsync() {
-            return base.Channel.DoWorkAsync();
+        public System.Threading.Tasks.Task<BuenosAires.Model.Respuesta> obtener_guias_de_despachoAsync() {
+            return base.Channel.obtener_guias_de_despachoAsync();
         }
     }
 }

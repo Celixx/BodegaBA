@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2c1caedc-3ecb-4ff7-96c8-9935a0ceb6a0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="46a869ab-448d-4589-979f-646527d5b2ed" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,9 +22,11 @@
     <MetadataSource Address="http://localhost:54096/WsGuiaDespacho.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WsGuiaDespacho.wsdl" MetadataType="Wsdl" ID="5ae4a085-3ed4-46cf-90bf-525ac843d57c" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?wsdl" />
-    <MetadataFile FileName="WsGuiaDespacho.disco" MetadataType="Disco" ID="2a93e443-d91d-4613-b2e8-6e38f2915fc5" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?disco" />
-    <MetadataFile FileName="WsGuiaDespacho.xsd" MetadataType="Schema" ID="5dcfd7f6-82bd-49e9-bc6a-b0e4a5ea2907" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsGuiaDespacho.xsd" MetadataType="Schema" ID="9a716f30-bf6a-465b-84e3-6db9cbe708bb" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsGuiaDespacho1.xsd" MetadataType="Schema" ID="e82456ae-cb24-4ecf-87ba-650f17bd1add" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsGuiaDespacho.wsdl" MetadataType="Wsdl" ID="8efb2b05-3b6b-4e09-a0dc-3bae36733870" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?wsdl" />
+    <MetadataFile FileName="WsGuiaDespacho.disco" MetadataType="Disco" ID="899ef9e7-6195-43df-aaad-b52c496903bd" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?disco" />
+    <MetadataFile FileName="WsGuiaDespacho2.xsd" MetadataType="Schema" ID="2ccb7721-a5c7-41b3-bddf-6f96565fc77c" SourceId="1" SourceUrl="http://localhost:54096/WsGuiaDespacho.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
