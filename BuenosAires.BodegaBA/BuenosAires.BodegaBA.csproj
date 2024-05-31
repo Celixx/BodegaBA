@@ -78,6 +78,15 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Tools.cs" />
+    <Compile Include="VentanaReservarAnwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaReservarAnwo.Designer.cs">
+      <DependentUpon>VentanaReservarAnwo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VentanaReservarAnwo.resx">
+      <DependentUpon>VentanaReservarAnwo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Connected Services\WsAutenticacionReference\WsAutenticacion.disco" />
     <None Include="Connected Services\WsAutenticacionReference\configuration91.svcinfo" />
     <None Include="Connected Services\WsAutenticacionReference\configuration.svcinfo" />

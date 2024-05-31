@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReservar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnMantenedor = new System.Windows.Forms.Button();
             this.btnAdministrar = new System.Windows.Forms.Button();
@@ -57,15 +57,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Sistema de Bodega - Menú Principal";
             // 
-            // button2
+            // btnReservar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(243, 345);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(315, 48);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Reservar Equipos de ANWO";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReservar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReservar.Location = new System.Drawing.Point(243, 345);
+            this.btnReservar.Name = "btnReservar";
+            this.btnReservar.Size = new System.Drawing.Size(315, 48);
+            this.btnReservar.TabIndex = 3;
+            this.btnReservar.Text = "Reservar Equipos de ANWO";
+            this.btnReservar.UseVisualStyleBackColor = true;
+            this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
             // 
             // btnSalir
             // 
@@ -108,7 +109,7 @@
             this.Controls.Add(this.btnAdministrar);
             this.Controls.Add(this.btnMantenedor);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnReservar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "VentanaPrincipal";
@@ -123,7 +124,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReservar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnMantenedor;
         private System.Windows.Forms.Button btnAdministrar;
