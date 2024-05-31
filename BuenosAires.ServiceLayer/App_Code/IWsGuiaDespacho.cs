@@ -12,4 +12,7 @@ public interface IWsGuiaDespacho
 {
     [OperationContract]
     Respuesta obtener_guias_de_despacho();
+
+    [OperationContract]
+    void actualizar_estado_guia_despacho(int nrogd, string estadogd);
 }

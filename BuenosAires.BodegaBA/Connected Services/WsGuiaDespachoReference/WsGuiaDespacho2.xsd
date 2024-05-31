@@ -13,4 +13,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="actualizar_estado_guia_despacho">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrogd" type="xs:int" />
+        <xs:element minOccurs="0" name="estadogd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="actualizar_estado_guia_despachoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

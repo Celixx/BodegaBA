@@ -20,6 +20,12 @@ namespace BuenosAires.BodegaBA.WsGuiaDespachoReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despacho", ReplyAction="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despachoResponse")]
         System.Threading.Tasks.Task<BuenosAires.Model.Respuesta> obtener_guias_de_despachoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsGuiaDespacho/actualizar_estado_guia_despacho", ReplyAction="http://tempuri.org/IWsGuiaDespacho/actualizar_estado_guia_despachoResponse")]
+        void actualizar_estado_guia_despacho(int nrogd, string estadogd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsGuiaDespacho/actualizar_estado_guia_despacho", ReplyAction="http://tempuri.org/IWsGuiaDespacho/actualizar_estado_guia_despachoResponse")]
+        System.Threading.Tasks.Task actualizar_estado_guia_despachoAsync(int nrogd, string estadogd);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +61,14 @@ namespace BuenosAires.BodegaBA.WsGuiaDespachoReference {
         
         public System.Threading.Tasks.Task<BuenosAires.Model.Respuesta> obtener_guias_de_despachoAsync() {
             return base.Channel.obtener_guias_de_despachoAsync();
+        }
+        
+        public void actualizar_estado_guia_despacho(int nrogd, string estadogd) {
+            base.Channel.actualizar_estado_guia_despacho(nrogd, estadogd);
+        }
+        
+        public System.Threading.Tasks.Task actualizar_estado_guia_despachoAsync(int nrogd, string estadogd) {
+            return base.Channel.actualizar_estado_guia_despachoAsync(nrogd, estadogd);
         }
     }
 }

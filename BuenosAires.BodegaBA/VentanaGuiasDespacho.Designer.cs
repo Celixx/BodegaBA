@@ -37,6 +37,10 @@
             this.estadogd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nrofac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomcli = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opcionDespachado = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.opcionImprimir = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.opcionEntregado = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnRefrescar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,11 +82,15 @@
             this.descfac,
             this.estadogd,
             this.nrofac,
-            this.nomcli});
+            this.nomcli,
+            this.opcionDespachado,
+            this.opcionImprimir,
+            this.opcionEntregado});
             this.grid.Location = new System.Drawing.Point(16, 73);
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(772, 336);
+            this.grid.Size = new System.Drawing.Size(844, 336);
             this.grid.TabIndex = 3;
+            this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
             // 
             // nrogd
             // 
@@ -114,11 +122,45 @@
             this.nomcli.HeaderText = "Cliente";
             this.nomcli.Name = "nomcli";
             // 
+            // opcionDespachado
+            // 
+            this.opcionDespachado.HeaderText = "Opción Despachado";
+            this.opcionDespachado.Name = "opcionDespachado";
+            this.opcionDespachado.Text = "Despachado";
+            this.opcionDespachado.UseColumnTextForButtonValue = true;
+            // 
+            // opcionImprimir
+            // 
+            this.opcionImprimir.HeaderText = "Opción Imprimir";
+            this.opcionImprimir.Name = "opcionImprimir";
+            this.opcionImprimir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.opcionImprimir.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.opcionImprimir.Text = "Imprimir";
+            this.opcionImprimir.UseColumnTextForButtonValue = true;
+            // 
+            // opcionEntregado
+            // 
+            this.opcionEntregado.HeaderText = "Opción Entregado";
+            this.opcionEntregado.Name = "opcionEntregado";
+            this.opcionEntregado.Text = "Entregado";
+            this.opcionEntregado.UseColumnTextForButtonValue = true;
+            // 
+            // btnRefrescar
+            // 
+            this.btnRefrescar.Location = new System.Drawing.Point(480, 415);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(75, 23);
+            this.btnRefrescar.TabIndex = 4;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
+            // 
             // VentanaGuiasDespacho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(876, 450);
+            this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.label2);
@@ -142,5 +184,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estadogd;
         private System.Windows.Forms.DataGridViewTextBoxColumn nrofac;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomcli;
+        private System.Windows.Forms.DataGridViewButtonColumn opcionDespachado;
+        private System.Windows.Forms.DataGridViewButtonColumn opcionImprimir;
+        private System.Windows.Forms.DataGridViewButtonColumn opcionEntregado;
+        private System.Windows.Forms.Button btnRefrescar;
     }
 }

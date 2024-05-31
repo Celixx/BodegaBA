@@ -49,6 +49,16 @@ public class WsGuiaDespacho : IWsGuiaDespacho
             return resp;
         }
     }
+
+    public void actualizar_estado_guia_despacho(int nrogd, string estadogd)
+    {
+        string apiUrl = "http://127.0.0.1:8000/BuenosAiresApiRest/actualizar_estado_guia_despacho/"+nrogd+"/"+estadogd;
+        using (HttpClient client = new HttpClient())
+        {
+            HttpResponseMessage response = client.GetAsync(apiUrl).Result;
+            return;
+        }
+    }
 }
 
 

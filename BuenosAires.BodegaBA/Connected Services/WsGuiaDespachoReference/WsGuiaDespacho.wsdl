@@ -13,16 +13,35 @@
   <wsdl:message name="IWsGuiaDespacho_obtener_guias_de_despacho_OutputMessage">
     <wsdl:part name="parameters" element="tns:obtener_guias_de_despachoResponse" />
   </wsdl:message>
+  <wsdl:message name="IWsGuiaDespacho_actualizar_estado_guia_despacho_InputMessage">
+    <wsdl:part name="parameters" element="tns:actualizar_estado_guia_despacho" />
+  </wsdl:message>
+  <wsdl:message name="IWsGuiaDespacho_actualizar_estado_guia_despacho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:actualizar_estado_guia_despachoResponse" />
+  </wsdl:message>
   <wsdl:portType name="IWsGuiaDespacho">
     <wsdl:operation name="obtener_guias_de_despacho">
       <wsdl:input wsaw:Action="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despacho" message="tns:IWsGuiaDespacho_obtener_guias_de_despacho_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despachoResponse" message="tns:IWsGuiaDespacho_obtener_guias_de_despacho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_estado_guia_despacho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsGuiaDespacho/actualizar_estado_guia_despacho" message="tns:IWsGuiaDespacho_actualizar_estado_guia_despacho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsGuiaDespacho/actualizar_estado_guia_despachoResponse" message="tns:IWsGuiaDespacho_actualizar_estado_guia_despacho_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IWsGuiaDespacho" type="tns:IWsGuiaDespacho">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="obtener_guias_de_despacho">
       <soap:operation soapAction="http://tempuri.org/IWsGuiaDespacho/obtener_guias_de_despacho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_estado_guia_despacho">
+      <soap:operation soapAction="http://tempuri.org/IWsGuiaDespacho/actualizar_estado_guia_despacho" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
