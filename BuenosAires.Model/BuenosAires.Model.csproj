@@ -112,6 +112,7 @@
     <Compile Include="SolicitudServicio.cs">
       <DependentUpon>BuenosAiresEDM.tt</DependentUpon>
     </Compile>
+    <Compile Include="StockBodega.cs" />
     <Compile Include="StockProducto.cs">
       <DependentUpon>BuenosAiresEDM.tt</DependentUpon>
     </Compile>
