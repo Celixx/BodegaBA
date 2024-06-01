@@ -9,7 +9,7 @@ using System.ServiceModel;
 using System.Text;
 using Newtonsoft.Json;
 
-// NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "WsGuiaDespacho" in code, svc and config file together.
+// NOTE:  You can use the "Rename" command on the "Refactor" menu to change the class name "WsGuiaDespacho" in code, svc and config file together.
 public class WsGuiaDespacho : IWsGuiaDespacho
 {
     public Respuesta obtener_guias_de_despacho()
