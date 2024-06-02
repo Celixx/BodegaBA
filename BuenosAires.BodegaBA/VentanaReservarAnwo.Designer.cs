@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.grid = new System.Windows.Forms.DataGridView();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nroserieanwo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomprodanwo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioanwo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opciones = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,15 +53,16 @@
             // 
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.nroserieanwo,
+            this.nomprodanwo,
+            this.precioanwo,
+            this.reservado,
+            this.opciones});
             this.grid.Location = new System.Drawing.Point(12, 101);
             this.grid.Name = "grid";
             this.grid.Size = new System.Drawing.Size(776, 309);
             this.grid.TabIndex = 1;
+            this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
             // 
             // btnVolver
             // 
@@ -73,30 +74,38 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // Column1
+            // nroserieanwo
             // 
-            this.Column1.HeaderText = "Nro Serie";
-            this.Column1.Name = "Column1";
+            this.nroserieanwo.DataPropertyName = "nroserieanwo";
+            this.nroserieanwo.HeaderText = "Nro Serie";
+            this.nroserieanwo.Name = "nroserieanwo";
             // 
-            // Column2
+            // nomprodanwo
             // 
-            this.Column2.HeaderText = "Nombre Producto";
-            this.Column2.Name = "Column2";
+            this.nomprodanwo.DataPropertyName = "nomprodanwo";
+            this.nomprodanwo.HeaderText = "Nombre Producto";
+            this.nomprodanwo.Name = "nomprodanwo";
             // 
-            // Column3
+            // precioanwo
             // 
-            this.Column3.HeaderText = "Precio";
-            this.Column3.Name = "Column3";
+            this.precioanwo.DataPropertyName = "precioanwo";
+            this.precioanwo.HeaderText = "Precio";
+            this.precioanwo.Name = "precioanwo";
             // 
-            // Column4
+            // reservado
             // 
-            this.Column4.HeaderText = "Reservado";
-            this.Column4.Name = "Column4";
+            this.reservado.DataPropertyName = "reservado";
+            this.reservado.HeaderText = "Reservado";
+            this.reservado.Name = "reservado";
             // 
-            // Column5
+            // opciones
             // 
-            this.Column5.HeaderText = "Opciones";
-            this.Column5.Name = "Column5";
+            this.opciones.DataPropertyName = "btwReservar";
+            this.opciones.HeaderText = "Opciones";
+            this.opciones.Name = "opciones";
+            this.opciones.Text = "Reservar";
+            this.opciones.ToolTipText = "Reservar";
+            this.opciones.UseColumnTextForButtonValue = true;
             // 
             // VentanaReservarAnwo
             // 
@@ -118,11 +127,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView grid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nroserieanwo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomprodanwo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioanwo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reservado;
+        private System.Windows.Forms.DataGridViewButtonColumn opciones;
     }
 }

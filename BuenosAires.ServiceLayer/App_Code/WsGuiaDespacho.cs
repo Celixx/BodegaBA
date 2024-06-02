@@ -15,7 +15,7 @@ public class WsGuiaDespacho : IWsGuiaDespacho
     public Respuesta obtener_guias_de_despacho()
     {
         var resp = new Respuesta();
-        resp.Accion = "autenticar al usuario";
+        resp.Accion = "obtener guias despacho";
         resp.Mensaje = "";
         resp.HayErrores = false;
         resp.XmlListaGuiaDespacho = "";

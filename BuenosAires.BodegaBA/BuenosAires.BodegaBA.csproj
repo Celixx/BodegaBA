@@ -58,6 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\WsAnwoReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\WsGuiaDespachoReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,6 +92,16 @@
     <EmbeddedResource Include="VentanaReservarAnwo.resx">
       <DependentUpon>VentanaReservarAnwo.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo.wsdl" />
+    <None Include="Connected Services\WsAnwoReference\WsAnwo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\WsAutenticacionReference\WsAutenticacion.disco" />
     <None Include="Connected Services\WsAutenticacionReference\configuration91.svcinfo" />
     <None Include="Connected Services\WsAutenticacionReference\configuration.svcinfo" />
@@ -220,6 +235,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WsAnwoReference\" />
     <WCFMetadataStorage Include="Connected Services\WsAutenticacionReference\" />
     <WCFMetadataStorage Include="Connected Services\WsGuiaDespachoReference\" />
     <WCFMetadataStorage Include="Connected Services\WsProductoReference\" />
@@ -235,6 +251,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WsGuiaDespachoReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
