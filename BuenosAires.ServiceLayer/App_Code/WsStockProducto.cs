@@ -26,16 +26,18 @@ public class WsStockProducto : IWsStockProducto
         {
             using (HttpClient client = new HttpClient())
             {
-                resp.JsonStockProducto = response.Content.ReadAsStringAsync().Result;
-                string json = response.Content.ReadAsStringAsync().Result;
-                List<StockBodega> lista = JsonConvert.DeserializeObject<List<StockBodega>>(json);
-                resp.XmlStockProducto = Util.SerializarXML(lista);
-            }
-            else
-            {
-                resp.HayErrores = true;
-                resp.Mensaje = "No fue posible obtener el stock de la bodega, intente nuevamente más tarde "
-                    + "o comuníquese con el Administrador del Sistema";
+                HttpResponseMessage response = client.GetAsync(apiUrl).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    resp.JsonStockProducto = response.Content.ReadAsStringAsync().Result;
+                }
+                else
+                {
+                    resp.HayErrores = true;
+                    resp.Mensaje = "No fue posible " + resp.Accion + " intente nuevamente más tarde "
+                        + "o comuníquese con el Administrador del Sistema";
+                }
+                return resp;
             }
         }
         catch (Exception ex)

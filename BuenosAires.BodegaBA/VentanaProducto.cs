@@ -110,5 +110,11 @@ namespace BuenosAires.BodegaBA
             grid.RefrescarYajustar();
             if (bc.HayErrores == true) this.MensajeInfo(bc.Mensaje);
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            new VentanaPrincipal().Show();
+            this.Hide();
+        }
     }
 }
