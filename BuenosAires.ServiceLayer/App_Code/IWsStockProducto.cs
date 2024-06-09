@@ -11,6 +11,6 @@ using System.Text;
 public interface IWsStockProducto
 {
     [OperationContract]
-    Respuesta obtener_productos_bodega();
+    Respuesta obtener_equipos_en_bodega();
 
 }

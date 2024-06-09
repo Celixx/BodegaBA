@@ -38,11 +38,11 @@ namespace BuenosAires.BodegaBA
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new VentanaGuiasDespacho().Show();
-            this.Hide();
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    new VentanaGuiasDespacho().Show();
+        //    this.Hide();
+        //}
 
         private void btnAdministrar_Click(object sender, EventArgs e)
         {
@@ -53,6 +53,12 @@ namespace BuenosAires.BodegaBA
         private void btnReservar_Click(object sender, EventArgs e)
         {
             new VentanaReservarAnwo().Show();
+            this.Hide();
+        }
+
+        private void btnConsultarStock_Click(object sender, EventArgs e)
+        {
+            new VentanaStockProducto().Show();
             this.Hide();
         }
     }

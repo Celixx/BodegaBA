@@ -4,6 +4,7 @@ using BuenosAires.Model;
 using System;
 using BuenosAires.BodegaBA.WsAutenticacionReference;
 using Newtonsoft.Json;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BuenosAires.ServiceProxy
 {
@@ -52,7 +53,7 @@ namespace BuenosAires.ServiceProxy
             ws.InnerChannel.OperationTimeout = new TimeSpan(1, 0, 0);
             return ws;
         }
-
+        
         public void Autenticar(string tipousu, string username, string password)
         {
             CopiarPropiedades(getWs().Autenticar(tipousu, username, password));

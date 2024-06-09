@@ -44,6 +44,8 @@ namespace BuenosAires.Model
         [DataMember]
         public string JsonAutenticado { get; set; }
         [DataMember]
+        public string JsonStockProducto { get; set; }
+        [DataMember]
         public string XmlAnwoStockProducto { get; set; }
         [DataMember]
         public string XmlListaAnwoStockProducto { get; set; }

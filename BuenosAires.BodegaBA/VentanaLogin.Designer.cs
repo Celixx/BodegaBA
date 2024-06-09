@@ -40,24 +40,27 @@ namespace BuenosAires.VentaBA
             // 
             // txtCuenta
             // 
-            this.txtCuenta.Location = new System.Drawing.Point(138, 93);
+            this.txtCuenta.Location = new System.Drawing.Point(184, 114);
+            this.txtCuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCuenta.Name = "txtCuenta";
-            this.txtCuenta.Size = new System.Drawing.Size(100, 20);
+            this.txtCuenta.Size = new System.Drawing.Size(132, 22);
             this.txtCuenta.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(138, 130);
+            this.txtPassword.Location = new System.Drawing.Point(184, 160);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtPassword.Size = new System.Drawing.Size(132, 22);
             this.txtPassword.TabIndex = 1;
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(80, 173);
+            this.btnIngresar.Location = new System.Drawing.Point(107, 213);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(143, 23);
+            this.btnIngresar.Size = new System.Drawing.Size(191, 28);
             this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -66,18 +69,20 @@ namespace BuenosAires.VentaBA
             // lblCuenta
             // 
             this.lblCuenta.AutoSize = true;
-            this.lblCuenta.Location = new System.Drawing.Point(63, 96);
+            this.lblCuenta.Location = new System.Drawing.Point(84, 118);
+            this.lblCuenta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCuenta.Name = "lblCuenta";
-            this.lblCuenta.Size = new System.Drawing.Size(41, 13);
+            this.lblCuenta.Size = new System.Drawing.Size(49, 16);
             this.lblCuenta.TabIndex = 4;
             this.lblCuenta.Text = "Cuenta";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(63, 133);
+            this.lblPassword.Location = new System.Drawing.Point(84, 164);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(61, 13);
+            this.lblPassword.Size = new System.Drawing.Size(76, 16);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Contraseña";
             // 
@@ -85,10 +90,9 @@ namespace BuenosAires.VentaBA
             // 
             this.lblTituloVentana.AutoSize = true;
             this.lblTituloVentana.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloVentana.Location = new System.Drawing.Point(35, 47);
-            this.lblTituloVentana.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTituloVentana.Location = new System.Drawing.Point(47, 58);
             this.lblTituloVentana.Name = "lblTituloVentana";
-            this.lblTituloVentana.Size = new System.Drawing.Size(257, 20);
+            this.lblTituloVentana.Size = new System.Drawing.Size(308, 25);
             this.lblTituloVentana.TabIndex = 7;
             this.lblTituloVentana.Text = "Ingresar al Sistema de Bodega";
             // 
@@ -96,18 +100,17 @@ namespace BuenosAires.VentaBA
             // 
             this.lblNombreSistema.AutoSize = true;
             this.lblNombreSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreSistema.Location = new System.Drawing.Point(62, 9);
-            this.lblNombreSistema.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreSistema.Location = new System.Drawing.Point(83, 11);
             this.lblNombreSistema.Name = "lblNombreSistema";
-            this.lblNombreSistema.Size = new System.Drawing.Size(186, 20);
+            this.lblNombreSistema.Size = new System.Drawing.Size(225, 25);
             this.lblNombreSistema.TabIndex = 8;
             this.lblNombreSistema.Text = "Sistema Buenos Aires";
             // 
             // VentanaLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 218);
+            this.ClientSize = new System.Drawing.Size(424, 268);
             this.Controls.Add(this.lblNombreSistema);
             this.Controls.Add(this.lblTituloVentana);
             this.Controls.Add(this.lblPassword);
@@ -115,8 +118,10 @@ namespace BuenosAires.VentaBA
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtCuenta);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "VentanaLogin";
             this.Text = "Iniciar sesión";
+            this.Load += new System.EventHandler(this.VentanaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

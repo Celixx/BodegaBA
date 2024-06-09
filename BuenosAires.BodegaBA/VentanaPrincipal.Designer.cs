@@ -34,6 +34,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnMantenedor = new System.Windows.Forms.Button();
             this.btnAdministrar = new System.Windows.Forms.Button();
+            this.btnConsultarStock = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +61,7 @@
             // btnReservar
             // 
             this.btnReservar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReservar.Location = new System.Drawing.Point(243, 345);
+            this.btnReservar.Location = new System.Drawing.Point(243, 296);
             this.btnReservar.Name = "btnReservar";
             this.btnReservar.Size = new System.Drawing.Size(315, 48);
             this.btnReservar.TabIndex = 3;
@@ -82,7 +83,7 @@
             // btnMantenedor
             // 
             this.btnMantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenedor.Location = new System.Drawing.Point(243, 254);
+            this.btnMantenedor.Location = new System.Drawing.Point(243, 205);
             this.btnMantenedor.Name = "btnMantenedor";
             this.btnMantenedor.Size = new System.Drawing.Size(315, 38);
             this.btnMantenedor.TabIndex = 5;
@@ -93,7 +94,7 @@
             // btnAdministrar
             // 
             this.btnAdministrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministrar.Location = new System.Drawing.Point(243, 298);
+            this.btnAdministrar.Location = new System.Drawing.Point(243, 249);
             this.btnAdministrar.Name = "btnAdministrar";
             this.btnAdministrar.Size = new System.Drawing.Size(315, 41);
             this.btnAdministrar.TabIndex = 6;
@@ -101,11 +102,24 @@
             this.btnAdministrar.UseVisualStyleBackColor = true;
             this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
             // 
+            // btnConsultarStock
+            // 
+            this.btnConsultarStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarStock.Location = new System.Drawing.Point(243, 349);
+            this.btnConsultarStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultarStock.Name = "btnConsultarStock";
+            this.btnConsultarStock.Size = new System.Drawing.Size(315, 44);
+            this.btnConsultarStock.TabIndex = 7;
+            this.btnConsultarStock.Text = "Consultar Stock en Bodega";
+            this.btnConsultarStock.UseVisualStyleBackColor = true;
+            this.btnConsultarStock.Click += new System.EventHandler(this.btnConsultarStock_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 499);
+            this.Controls.Add(this.btnConsultarStock);
             this.Controls.Add(this.btnAdministrar);
             this.Controls.Add(this.btnMantenedor);
             this.Controls.Add(this.btnSalir);
@@ -128,5 +142,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnMantenedor;
         private System.Windows.Forms.Button btnAdministrar;
+        private System.Windows.Forms.Button btnConsultarStock;
     }
 }

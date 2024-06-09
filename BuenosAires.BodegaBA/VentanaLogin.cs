@@ -36,5 +36,10 @@ namespace BuenosAires.VentaBA
                 this.MensajeInfo(sc.Mensaje);
             }
         }
+
+        private void VentanaLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

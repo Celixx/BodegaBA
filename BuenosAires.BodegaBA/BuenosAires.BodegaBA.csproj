@@ -35,10 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
-      <HintPath>..\..\..\..\BuenosAires-001D-2024-04-08\CSharp\BuenosAires\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\..\..\..\BuenosAires-001D-2024-04-08\CSharp\BuenosAires\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -68,6 +68,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\WsStockProductoReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="IScGuiaDespacho.cs" />
     <Compile Include="ScAutenticacion.cs" />
     <Compile Include="ScGuiaDespacho.cs" />
@@ -82,6 +87,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="ScStockProducto.cs" />
     <Compile Include="Tools.cs" />
     <Compile Include="VentanaReservarAnwo.cs">
       <SubType>Form</SubType>
@@ -89,8 +95,17 @@
     <Compile Include="VentanaReservarAnwo.Designer.cs">
       <DependentUpon>VentanaReservarAnwo.cs</DependentUpon>
     </Compile>
+    <Compile Include="VentanaStockProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaStockProducto.Designer.cs">
+      <DependentUpon>VentanaStockProducto.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="VentanaReservarAnwo.resx">
       <DependentUpon>VentanaReservarAnwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaStockProducto.resx">
+      <DependentUpon>VentanaStockProducto.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\WsAnwoReference\WsAnwo.wsdl" />
     <None Include="Connected Services\WsAnwoReference\WsAnwo.xsd">
@@ -205,6 +220,16 @@
     <None Include="Connected Services\WsProductoReference\WsProducto3.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto.wsdl" />
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BuenosAires.Model.Producto.datasource" />
     <None Include="Properties\DataSources\BuenosAires.Model.Respuesta.datasource" />
@@ -239,6 +264,7 @@
     <WCFMetadataStorage Include="Connected Services\WsAutenticacionReference\" />
     <WCFMetadataStorage Include="Connected Services\WsGuiaDespachoReference\" />
     <WCFMetadataStorage Include="Connected Services\WsProductoReference\" />
+    <WCFMetadataStorage Include="Connected Services\WsStockProductoReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.disco" />
@@ -266,6 +292,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WsAnwoReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
