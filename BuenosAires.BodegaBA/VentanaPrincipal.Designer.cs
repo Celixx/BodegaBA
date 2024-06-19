@@ -61,9 +61,9 @@
             // btnReservar
             // 
             this.btnReservar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReservar.Location = new System.Drawing.Point(243, 296);
+            this.btnReservar.Location = new System.Drawing.Point(175, 296);
             this.btnReservar.Name = "btnReservar";
-            this.btnReservar.Size = new System.Drawing.Size(315, 48);
+            this.btnReservar.Size = new System.Drawing.Size(438, 48);
             this.btnReservar.TabIndex = 3;
             this.btnReservar.Text = "Reservar Equipos de ANWO";
             this.btnReservar.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(243, 399);
+            this.btnSalir.Location = new System.Drawing.Point(175, 399);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(315, 45);
+            this.btnSalir.Size = new System.Drawing.Size(438, 45);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // 
             // btnMantenedor
             // 
-            this.btnMantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenedor.Location = new System.Drawing.Point(243, 205);
+            this.btnMantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMantenedor.Location = new System.Drawing.Point(175, 205);
             this.btnMantenedor.Name = "btnMantenedor";
-            this.btnMantenedor.Size = new System.Drawing.Size(315, 38);
+            this.btnMantenedor.Size = new System.Drawing.Size(438, 38);
             this.btnMantenedor.TabIndex = 5;
             this.btnMantenedor.Text = "Mantenedor de Productos";
             this.btnMantenedor.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             // btnAdministrar
             // 
             this.btnAdministrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministrar.Location = new System.Drawing.Point(243, 249);
+            this.btnAdministrar.Location = new System.Drawing.Point(175, 249);
             this.btnAdministrar.Name = "btnAdministrar";
-            this.btnAdministrar.Size = new System.Drawing.Size(315, 41);
+            this.btnAdministrar.Size = new System.Drawing.Size(438, 41);
             this.btnAdministrar.TabIndex = 6;
             this.btnAdministrar.Text = "Administrar Guías";
             this.btnAdministrar.UseVisualStyleBackColor = true;
@@ -104,11 +104,11 @@
             // 
             // btnConsultarStock
             // 
-            this.btnConsultarStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarStock.Location = new System.Drawing.Point(243, 349);
-            this.btnConsultarStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultarStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarStock.Location = new System.Drawing.Point(175, 350);
+            this.btnConsultarStock.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultarStock.Name = "btnConsultarStock";
-            this.btnConsultarStock.Size = new System.Drawing.Size(315, 44);
+            this.btnConsultarStock.Size = new System.Drawing.Size(438, 44);
             this.btnConsultarStock.TabIndex = 7;
             this.btnConsultarStock.Text = "Consultar Stock en Bodega";
             this.btnConsultarStock.UseVisualStyleBackColor = true;
